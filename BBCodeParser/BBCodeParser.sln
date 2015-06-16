@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BBCodeParser", "BBCodeParser\BBCodeParser.csproj", "{61C4D489-F2D2-4958-8F0E-3D7FB97C15C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{C92E1376-812E-46A7-8CF1-354511E2CDA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61C4D489-F2D2-4958-8F0E-3D7FB97C15C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61C4D489-F2D2-4958-8F0E-3D7FB97C15C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61C4D489-F2D2-4958-8F0E-3D7FB97C15C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61C4D489-F2D2-4958-8F0E-3D7FB97C15C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92E1376-812E-46A7-8CF1-354511E2CDA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92E1376-812E-46A7-8CF1-354511E2CDA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92E1376-812E-46A7-8CF1-354511E2CDA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92E1376-812E-46A7-8CF1-354511E2CDA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

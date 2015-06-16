@@ -1,0 +1,7 @@
+.hg
+/*.hgignore
+_ReSharper.BBCodeParser
+/BBCodeParser/BBCodeParser/bin/Debug
+/BBCodeParser/BBCodeParser/obj/Debug
+/BBCodeParser/BBCodeParser.sln.DotSettings.user
+/BBCodeParser/BBCodeParser.v11.suo
