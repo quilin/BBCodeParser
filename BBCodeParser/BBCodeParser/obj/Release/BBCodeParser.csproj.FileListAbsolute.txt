@@ -1,7 +1,6 @@
-F:\Work\BBCodeParser\BBCodeParser\BBCodeParser\bin\Release\BBCodeParser.dll
-F:\Work\BBCodeParser\BBCodeParser\BBCodeParser\bin\Release\BBCodeParser.pdb
-F:\Work\BBCodeParser\BBCodeParser\BBCodeParser\obj\Release\BBCodeParser.dll
-F:\Work\BBCodeParser\BBCodeParser\BBCodeParser\obj\Release\BBCodeParser.pdb
-F:\Work\BBCodeParser\BBCodeParser\BBCodeParser\bin\Release\nunit.framework.dll
-F:\Work\BBCodeParser\BBCodeParser\BBCodeParser\bin\Release\nunit.framework.xml
-F:\Work\BBCodeParser\BBCodeParser\BBCodeParser\obj\Release\BBCodeParser.csprojResolveAssemblyReference.cache
+D:\test\bbparser\BBCodeParser\BBCodeParser\bin\Release\BBCodeParser.dll
+D:\test\bbparser\BBCodeParser\BBCodeParser\bin\Release\BBCodeParser.pdb
+D:\test\bbparser\BBCodeParser\BBCodeParser\bin\Release\nunit.framework.dll
+D:\test\bbparser\BBCodeParser\BBCodeParser\bin\Release\nunit.framework.xml
+D:\test\bbparser\BBCodeParser\BBCodeParser\obj\Release\BBCodeParser.dll
+D:\test\bbparser\BBCodeParser\BBCodeParser\obj\Release\BBCodeParser.pdb

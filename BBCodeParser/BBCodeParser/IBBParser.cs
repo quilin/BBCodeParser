@@ -1,7 +1,9 @@
-﻿namespace BBCodeParser
+﻿using BBCodeParser.Nodes;
+
+namespace BBCodeParser
 {
-    public interface IBBParser
-    {
-        string Parse(string input, DirectionMode directionMode);
-    }
+	public interface IBbParser
+	{
+		NodeTree Parse(string input);
+	}
 }
