@@ -6,7 +6,7 @@ namespace BBCodeParser.Nodes
 {
 	public class TextNode : Node
 	{
-		private readonly string text;
+	    private readonly string text;
 
 		public TextNode(string text)
 		{

@@ -11,7 +11,7 @@ namespace BBCodeParser
 	    private readonly Dictionary<string, string> aliasSubstitutions;
 	    private const int TreeMaxDepth = 6000;
 
-	    public static Dictionary<string, string> SecuritySubstitutions = new Dictionary<string, string>
+	    public static readonly Dictionary<string, string> SecuritySubstitutions = new Dictionary<string, string>
 	    {
 	        {"&", "&amp;"},
 	        {"<", "&lt;"},
