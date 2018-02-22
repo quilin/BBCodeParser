@@ -55,6 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reader.cs" />
     <Compile Include="Tags\CodeTag.cs" />
+    <Compile Include="Tags\ListTag.cs" />
     <Compile Include="Tags\PreformattedTag.cs" />
     <Compile Include="Tags\Tag.cs" />
     <Compile Include="Tags\TagResult.cs" />

@@ -5,20 +5,20 @@ namespace BBCodeParser.Tags
 {
     public class Tag
     {
-	    private static readonly Regex JsXssSecureRegex = new Regex("(javascript|data):", RegexOptions.IgnoreCase);
+        private static readonly Regex JsXssSecureRegex = new Regex("(javascript|data):", RegexOptions.IgnoreCase);
 
-	    private static readonly Regex[] EscapeRegexes =
-	    {
-		    new Regex("\"|'|`|\\n|\\s|\\t|\\r", RegexOptions.IgnoreCase),
-			new Regex("&#[\\d\\w]+;?", RegexOptions.IgnoreCase)
-	    };
+        private static readonly Regex[] EscapeRegexes =
+        {
+            new Regex("\"|'|`|\\n|\\s|\\t|\\r", RegexOptions.IgnoreCase),
+            new Regex("&#[\\d\\w]+;?", RegexOptions.IgnoreCase)
+        };
 
-        private string OpenTag { get; set; }
-        private string CloseTag { get; set; }
-        public bool WithAttribute { get; private set; }
-        public bool RequiresClosing { get; private set; }
-        private bool Secure { get; set; }
-        public string Name { get; private set; }
+        private string OpenTag { get; }
+        private string CloseTag { get; }
+        public bool WithAttribute { get; }
+        public bool RequiresClosing { get; }
+        private bool Secure { get; }
+        public string Name { get; }
 
         public Tag(string name, string openTag, string closeTag, bool withAttribute = false, bool secure = true)
         {
@@ -57,13 +57,22 @@ namespace BBCodeParser.Tags
 
         private string GetAttributeValueForHtml(string attributeValue)
         {
-	        if (!Secure)
-	        {
-		        return attributeValue;
-	        }
+            return Secure
+                ? JsXssSecureRegex.Replace(EscapeSpecialCharacters(attributeValue), "_xss_")
+                : attributeValue;
+        }
 
-		    var result = EscapeRegexes.Aggregate(attributeValue, (input, regex) => regex.Replace(input, string.Empty));
-	        return JsXssSecureRegex.Replace(result, "_xss_");
+        private static string EscapeSpecialCharacters(string value)
+        {
+            while (true)
+            {
+                var escaped = EscapeRegexes.Aggregate(value, (input, regex) => regex.Replace(input, string.Empty));
+                if (escaped == value)
+                {
+                    return escaped;
+                }
+                value = escaped;
+            }
         }
     }
 }
