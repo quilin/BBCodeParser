@@ -413,5 +413,14 @@ asdfas
             Assert.AreEqual("<ul><li>чи шо</li><li></li></ul>", actual.ToHtml());
             Assert.AreEqual(input, actual.ToBb());
         }
+
+        [Test]
+        public void TestRecursiveXss()
+        {
+            var input = "[link=\"jav&#&#90;90;ascript:\"]test[/link]";
+            var actual = bbCodeParser.Parse(input);
+
+            Assert.AreEqual("<a href=\"_xss_\">test</a>", actual.ToHtml());
+        }
     }
 }

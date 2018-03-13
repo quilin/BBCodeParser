@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fa7fef1e-eb3d-49dd-a41b-303c31b5955b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/BBCodeParser/Tags/Tag.cs" afterPath="$PROJECT_DIR$/BBCodeParser/Tags/Tag.cs" />
+      <change beforePath="$PROJECT_DIR$/BBCodeParser/bin/Release/BBCodeParser.dll" afterPath="$PROJECT_DIR$/BBCodeParser/bin/Release/BBCodeParser.dll" />
+      <change beforePath="$PROJECT_DIR$/BBCodeParser/bin/Release/BBCodeParser.pdb" afterPath="$PROJECT_DIR$/BBCodeParser/bin/Release/BBCodeParser.pdb" />
+      <change beforePath="$PROJECT_DIR$/BBCodeParser/obj/Release/BBCodeParser.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/BBCodeParser/obj/Release/BBCodeParser.csproj.FileListAbsolute.txt" />
+      <change beforePath="$PROJECT_DIR$/BBCodeParser/obj/Release/BBCodeParser.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/BBCodeParser/obj/Release/BBCodeParser.csprojResolveAssemblyReference.cache" />
+      <change beforePath="$PROJECT_DIR$/BBCodeParser/obj/Release/BBCodeParser.dll" afterPath="$PROJECT_DIR$/BBCodeParser/obj/Release/BBCodeParser.dll" />
+      <change beforePath="$PROJECT_DIR$/BBCodeParser/obj/Release/BBCodeParser.pdb" afterPath="$PROJECT_DIR$/BBCodeParser/obj/Release/BBCodeParser.pdb" />
+      <change beforePath="$PROJECT_DIR$/Testing/TestParse.cs" afterPath="$PROJECT_DIR$/Testing/TestParse.cs" />
+      <change beforePath="$PROJECT_DIR$/Testing/bin/Release/BBCodeParser.dll" afterPath="$PROJECT_DIR$/Testing/bin/Release/BBCodeParser.dll" />
+      <change beforePath="$PROJECT_DIR$/Testing/bin/Release/BBCodeParser.pdb" afterPath="$PROJECT_DIR$/Testing/bin/Release/BBCodeParser.pdb" />
+      <change beforePath="$PROJECT_DIR$/Testing/bin/Release/Testing.dll" afterPath="$PROJECT_DIR$/Testing/bin/Release/Testing.dll" />
+      <change beforePath="$PROJECT_DIR$/Testing/bin/Release/Testing.pdb" afterPath="$PROJECT_DIR$/Testing/bin/Release/Testing.pdb" />
+      <change beforePath="$PROJECT_DIR$/Testing/obj/Release/Testing.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/Testing/obj/Release/Testing.csproj.FileListAbsolute.txt" />
+      <change beforePath="$PROJECT_DIR$/Testing/obj/Release/Testing.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/Testing/obj/Release/Testing.csprojResolveAssemblyReference.cache" />
+      <change beforePath="$PROJECT_DIR$/Testing/obj/Release/Testing.dll" afterPath="$PROJECT_DIR$/Testing/obj/Release/Testing.dll" />
+      <change beforePath="$PROJECT_DIR$/Testing/obj/Release/Testing.pdb" afterPath="$PROJECT_DIR$/Testing/obj/Release/Testing.pdb" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="TestParse.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Testing/TestParse.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="411" column="0" lean-forward="true" selection-start-line="411" selection-start-column="0" selection-end-line="411" selection-end-column="0" />
+              <folding>
+                <marker date="1520949278937" expanded="false" signature="6:160" ph="..." />
+                <marker date="1520949278937" expanded="true" signature="179:19225" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="226:19223" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="726:2419" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="799:2157" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="2270:2407" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="2473:2708" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="2775:2936" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="2996:3177" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="3235:3416" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="3475:3959" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="4006:4268" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="4316:4625" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="4671:4911" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="4958:5193" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="5243:5729" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="5789:6385" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="6441:6967" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="7014:7497" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="7551:7867" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="7923:8262" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="8330:8632" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="8699:8983" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="9044:9334" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="9393:9698" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="9745:10038" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="10085:10374" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="10421:10806" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="10853:11148" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="11217:11472" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="11533:11803" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="11871:12859" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="12927:15226" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="15289:15485" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="15534:16693" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="16754:17417" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="17478:17826" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="17895:18285" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="18336:18615" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="18667:18942" ph="{...}" />
+                <marker date="1520949278937" expanded="true" signature="18997:19217" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tag.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BBCodeParser/Tags/Tag.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <folding>
+                <marker date="1520949268116" expanded="false" signature="6:56" ph="..." />
+                <marker date="1520949268116" expanded="true" signature="85:2559" ph="{...}" />
+                <marker date="1520949268116" expanded="true" signature="108:2557" ph="{...}" />
+                <marker date="1520949268116" expanded="true" signature="295:444" ph="{...}" />
+                <marker date="1520949268116" expanded="true" signature="802:1019" ph="{...}" />
+                <marker date="1520949268116" expanded="true" signature="1116:1330" ph="{...}" />
+                <marker date="1520949268116" expanded="true" signature="1388:1465" ph="{...}" />
+                <marker date="1520949268116" expanded="true" signature="1524:1602" ph="{...}" />
+                <marker date="1520949268116" expanded="true" signature="1677:1812" ph="{...}" />
+                <marker date="1520949268116" expanded="true" signature="1884:2150" ph="{...}" />
+                <marker date="1520949268116" expanded="true" signature="1919:1986" ph="{...}" />
+                <marker date="1520949268116" expanded="true" signature="2219:2551" ph="{...}" />
+                <marker date="1520949268116" expanded="true" signature="2254:2541" ph="{...}" />
+                <marker date="1520949268116" expanded="true" signature="2422:2494" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Testing/PerformanceTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BBCodeParser/IBBParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Testing/TestParse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Testing/packages.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BBCodeParser/Tags/ListTag.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BBCodeParser/Tags/Tag.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BBCodeParser/Nodes/TagNode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BBCodeParser/BbParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BBCodeParser/Tags/TagResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BBCodeParser/Nodes/Node.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BBCodeParser/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Testing/PerformanceTest.cs" />
+        <option value="$PROJECT_DIR$/BBCodeParser/IBBParser.cs" />
+        <option value="$PROJECT_DIR$/BBCodeParser/Tags/ListTag.cs" />
+        <option value="$PROJECT_DIR$/BBCodeParser/BbParser.cs" />
+        <option value="$PROJECT_DIR$/BBCodeParser/Nodes/TagNode.cs" />
+        <option value="$PROJECT_DIR$/BBCodeParser/Tags/Tag.cs" />
+        <option value="$PROJECT_DIR$/Testing/TestParse.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BBCodeParser (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BBCodeParser (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BBCodeParser" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BBCodeParser (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BBCodeParser" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Properties" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BBCodeParser (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="BBCodeParser" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Tags" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="BBCodeParser (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Testing" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+    </configuration>
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa7fef1e-eb3d-49dd-a41b-303c31b5955b" name="Default" comment="" />
+      <created>1501159105865</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1501159105865</updated>
+      <workItem from="1501159107129" duration="126000" />
+      <workItem from="1512737115148" duration="706000" />
+      <workItem from="1512998200204" duration="623000" />
+      <workItem from="1513016690380" duration="947000" />
+      <workItem from="1517223109034" duration="50000" />
+      <workItem from="1519297892190" duration="1289000" />
+      <workItem from="1520949104399" duration="531000" />
+    </task>
+    <task id="LOCAL-00001" summary="Adjustments">
+      <created>1520949210167</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1520949210167</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4272000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adjustments" />
+    <MESSAGE value="Merge fix" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/quilin/BBCodeParser&#10;&#10;# Conflicts:&#10;#&#9;BBCodeParser/BBCodeParser/Tags/Tag.cs&#10;#&#9;BBCodeParser/Testing/TestParse.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/quilin/BBCodeParser&#10;&#10;# Conflicts:&#10;#&#9;BBCodeParser/BBCodeParser/Tags/Tag.cs&#10;#&#9;BBCodeParser/Testing/TestParse.cs" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Testing/TestParse.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1520949278937" expanded="false" signature="6:160" ph="..." />
+            <marker date="1520949278937" expanded="true" signature="179:19225" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="226:19223" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="726:2419" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="799:2157" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="2270:2407" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="2473:2708" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="2775:2936" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="2996:3177" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="3235:3416" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="3475:3959" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="4006:4268" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="4316:4625" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="4671:4911" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="4958:5193" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="5243:5729" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="5789:6385" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="6441:6967" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="7014:7497" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="7551:7867" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="7923:8262" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="8330:8632" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="8699:8983" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="9044:9334" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="9393:9698" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="9745:10038" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="10085:10374" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="10421:10806" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="10853:11148" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="11217:11472" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="11533:11803" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="11871:12859" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="12927:15226" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="15289:15485" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="15534:16693" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="16754:17417" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="17478:17826" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="17895:18285" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="18336:18615" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="18667:18942" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="18997:19217" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBCodeParser/Nodes/TagNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/TestParse.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6075">
+          <caret line="411" column="0" lean-forward="false" selection-start-line="411" selection-start-column="0" selection-end-line="413" selection-end-column="50" />
+          <folding>
+            <marker date="1520949278937" expanded="false" signature="6:160" ph="..." />
+            <marker date="1520949278937" expanded="true" signature="179:19225" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="226:19223" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="726:2419" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="799:2157" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="2270:2407" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="2473:2708" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="2775:2936" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="2996:3177" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="3235:3416" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="3475:3959" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="4006:4268" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="4316:4625" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="4671:4911" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="4958:5193" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="5243:5729" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="5789:6385" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="6441:6967" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="7014:7497" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="7551:7867" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="7923:8262" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="8330:8632" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="8699:8983" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="9044:9334" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="9393:9698" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="9745:10038" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="10085:10374" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="10421:10806" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="10853:11148" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="11217:11472" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="11533:11803" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="11871:12859" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="12927:15226" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="15289:15485" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="15534:16693" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="16754:17417" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="17478:17826" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="17895:18285" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="18336:18615" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="18667:18942" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="18997:19217" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBCodeParser/Nodes/TagNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBCodeParser/IBBParser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/PerformanceTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="112" column="37" lean-forward="false" selection-start-line="112" selection-start-column="37" selection-end-line="112" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBCodeParser/IBBParser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBCodeParser/Nodes/Node.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBCodeParser/Tags/ListTag.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBCodeParser/BbParser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="56" column="57" lean-forward="false" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBCodeParser/Nodes/TagNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBCodeParser/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding>
+            <marker date="1512737129408" expanded="false" signature="6:101" ph="..." />
+            <marker date="1512737129408" expanded="true" signature="103:290" ph="/* General Information about an assembly is controlled through the following ... */" />
+            <marker date="1512737129408" expanded="true" signature="601:811" ph="/* Setting ComVisible to false makes the types in this assembly not visible ... */" />
+            <marker date="1512737129408" expanded="true" signature="986:1313" ph="/* Version information for an assembly consists of the following four values: ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing/TestParse.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="411" column="0" lean-forward="true" selection-start-line="411" selection-start-column="0" selection-end-line="411" selection-end-column="0" />
+          <folding>
+            <marker date="1520949278937" expanded="false" signature="6:160" ph="..." />
+            <marker date="1520949278937" expanded="true" signature="179:19225" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="226:19223" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="726:2419" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="799:2157" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="2270:2407" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="2473:2708" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="2775:2936" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="2996:3177" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="3235:3416" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="3475:3959" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="4006:4268" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="4316:4625" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="4671:4911" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="4958:5193" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="5243:5729" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="5789:6385" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="6441:6967" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="7014:7497" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="7551:7867" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="7923:8262" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="8330:8632" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="8699:8983" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="9044:9334" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="9393:9698" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="9745:10038" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="10085:10374" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="10421:10806" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="10853:11148" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="11217:11472" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="11533:11803" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="11871:12859" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="12927:15226" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="15289:15485" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="15534:16693" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="16754:17417" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="17478:17826" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="17895:18285" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="18336:18615" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="18667:18942" ph="{...}" />
+            <marker date="1520949278937" expanded="true" signature="18997:19217" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BBCodeParser/Tags/Tag.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <marker date="1520949268116" expanded="false" signature="6:56" ph="..." />
+            <marker date="1520949268116" expanded="true" signature="85:2559" ph="{...}" />
+            <marker date="1520949268116" expanded="true" signature="108:2557" ph="{...}" />
+            <marker date="1520949268116" expanded="true" signature="295:444" ph="{...}" />
+            <marker date="1520949268116" expanded="true" signature="802:1019" ph="{...}" />
+            <marker date="1520949268116" expanded="true" signature="1116:1330" ph="{...}" />
+            <marker date="1520949268116" expanded="true" signature="1388:1465" ph="{...}" />
+            <marker date="1520949268116" expanded="true" signature="1524:1602" ph="{...}" />
+            <marker date="1520949268116" expanded="true" signature="1677:1812" ph="{...}" />
+            <marker date="1520949268116" expanded="true" signature="1884:2150" ph="{...}" />
+            <marker date="1520949268116" expanded="true" signature="1919:1986" ph="{...}" />
+            <marker date="1520949268116" expanded="true" signature="2219:2551" ph="{...}" />
+            <marker date="1520949268116" expanded="true" signature="2254:2541" ph="{...}" />
+            <marker date="1520949268116" expanded="true" signature="2422:2494" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

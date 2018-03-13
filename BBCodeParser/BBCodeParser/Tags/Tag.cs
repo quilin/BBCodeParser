@@ -62,8 +62,22 @@ namespace BBCodeParser.Tags
                 return attributeValue;
             }
 
-            var result = EscapeRegexes.Aggregate(attributeValue, (input, regex) => regex.Replace(input, string.Empty));
-            return JsXssSecureRegex.Replace(result, "_xss_");
+            return Secure
+                ? JsXssSecureRegex.Replace(EscapeSpecialCharacters(attributeValue), "_xss_")
+                : attributeValue;
+        }
+
+        private static string EscapeSpecialCharacters(string value)
+        {
+            while (true)
+            {
+                var escaped = EscapeRegexes.Aggregate(value, (input, regex) => regex.Replace(input, string.Empty));
+                if (escaped == value)
+                {
+                    return escaped;
+                }
+                value = escaped;
+            }
         }
     }
 }

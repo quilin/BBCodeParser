@@ -7,3 +7,12 @@ D:\test\bbparser\BBCodeParser\Testing\bin\Release\nunit.framework.xml
 D:\test\bbparser\BBCodeParser\Testing\obj\Release\Testing.csprojResolveAssemblyReference.cache
 D:\test\bbparser\BBCodeParser\Testing\obj\Release\Testing.dll
 D:\test\bbparser\BBCodeParser\Testing\obj\Release\Testing.pdb
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\Testing\bin\Release\Testing.dll
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\Testing\bin\Release\Testing.pdb
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\Testing\bin\Release\BBCodeParser.dll
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\Testing\bin\Release\nunit.framework.dll
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\Testing\bin\Release\BBCodeParser.pdb
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\Testing\bin\Release\nunit.framework.xml
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\Testing\obj\Release\Testing.csprojResolveAssemblyReference.cache
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\Testing\obj\Release\Testing.dll
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\Testing\obj\Release\Testing.pdb

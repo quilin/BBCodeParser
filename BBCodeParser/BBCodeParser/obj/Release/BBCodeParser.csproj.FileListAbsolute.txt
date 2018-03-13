@@ -4,3 +4,10 @@ D:\test\bbparser\BBCodeParser\BBCodeParser\bin\Release\nunit.framework.dll
 D:\test\bbparser\BBCodeParser\BBCodeParser\bin\Release\nunit.framework.xml
 D:\test\bbparser\BBCodeParser\BBCodeParser\obj\Release\BBCodeParser.dll
 D:\test\bbparser\BBCodeParser\BBCodeParser\obj\Release\BBCodeParser.pdb
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\BBCodeParser\bin\Release\BBCodeParser.dll
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\BBCodeParser\bin\Release\BBCodeParser.pdb
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\BBCodeParser\bin\Release\nunit.framework.dll
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\BBCodeParser\bin\Release\nunit.framework.xml
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\BBCodeParser\obj\Release\BBCodeParser.csprojResolveAssemblyReference.cache
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\BBCodeParser\obj\Release\BBCodeParser.dll
+D:\test\bbcodeparser\BBCodeParser\BBCodeParser\BBCodeParser\obj\Release\BBCodeParser.pdb
