@@ -57,14 +57,12 @@ namespace BBCodeParser.Tags
 
         private string GetAttributeValueForHtml(string attributeValue)
         {
-            if (!Secure)
-            {
-                return attributeValue;
-            }
+            var attributeValueSecured = BbParser.AttributeSecuritySubstitutions.Aggregate(attributeValue,
+                (input, substitute) => input.Replace(substitute.Key, substitute.Value));
 
             return Secure
-                ? JsXssSecureRegex.Replace(EscapeSpecialCharacters(attributeValue), "_xss_")
-                : attributeValue;
+                ? JsXssSecureRegex.Replace(EscapeSpecialCharacters(attributeValueSecured), "_xss_")
+                : attributeValueSecured;
         }
 
         private static string EscapeSpecialCharacters(string value)

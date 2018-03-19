@@ -39,7 +39,7 @@ namespace Testing
                     new Tag("link", "<a href=\"{value}\">", "</a>", true),
                     new Tag("quote",
                         $"<div class=\"{QuoteClassName}\"><div class=\"{QuoteAuthorClassName}\">{{value}}</div>",
-                        "</div>", true),
+                        "</div>", true, false),
                     new Tag("tab", "&nbsp;&nbsp;&nbsp;"),
                     new Tag("private", "{value}", "", true, false),
                     new CodeTag("code", $"<pre class=\"{CodeClassName}\">", "</pre>"),
@@ -429,7 +429,7 @@ asdfas
             var input = "[quote=\"<script>alert('xss');</script>\"]test[/quote]";
             var actual = bbCodeParser.Parse(input);
 
-            Assert.AreEqual("<div class=\"quote\"><div class=\"quote-author\">scriptalert(xss);/script</div>test</div>", actual.ToHtml());
+            Assert.AreEqual("<div class=\"quote\"><div class=\"quote-author\">&lt;script&gt;alert('xss');&lt;/script&gt;</div>test</div>", actual.ToHtml());
         }
     }
 }
