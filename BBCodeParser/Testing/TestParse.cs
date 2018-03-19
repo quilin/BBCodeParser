@@ -422,5 +422,14 @@ asdfas
 
             Assert.AreEqual("<a href=\"_xss_\">test</a>", actual.ToHtml());
         }
+
+        [Test]
+        public void TestHtmlXssInAttributes()
+        {
+            var input = "[quote=\"<script>alert('xss');</script>\"]test[/quote]";
+            var actual = bbCodeParser.Parse(input);
+
+            Assert.AreEqual("<div class=\"quote\"><div class=\"quote-author\">scriptalert(xss);/script</div>test</div>", actual.ToHtml());
+        }
     }
 }

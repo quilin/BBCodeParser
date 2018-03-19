@@ -9,7 +9,7 @@ namespace BBCodeParser.Tags
 
         private static readonly Regex[] EscapeRegexes =
         {
-            new Regex("\"|'|`|\\n|\\s|\\t|\\r", RegexOptions.IgnoreCase),
+            new Regex("\"|'|`|\\n|\\s|\\t|\\r|\\<|\\>", RegexOptions.IgnoreCase),
             new Regex("&#[\\d\\w]+;?", RegexOptions.IgnoreCase)
         };
 
