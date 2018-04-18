@@ -4,9 +4,9 @@ After long thinking I decided to come back to proper one-way parsing. Even with 
 
 Because of those changes I was able to come up with more features and securities. E.g. as long as you no longer recieve the plain string as parsing result, but instead `NodeTree`, you can cast it to any format you need or use predefined `ToHtml`, `ToText` and `ToBb`. There are also more different tags and more substitutions options.
 
-#How to use it?
+# How to use it?
 
-##BbParser
+## BbParser
 
     public BbParser(Tag[] tags, Dictionary<string, string> securitySubstitutions, Dictionary<string, string> aliasSubstitutions)
 
@@ -16,11 +16,11 @@ The BbParser is an entry point for the library, and you should use the only cons
 `securitySubstitutions` is a set of string pairs, that will substitute keys with values every time parser faces it. The default substitutions are `& => &amp;`, `< => &lt;` and `> => &gt;` and you can get it from a static field `BbParser.SecuritySubstitutions`.
 `aliasSubstitutions` is a set of substitutions that has no security matter and used only for visual purposes. Like those: `-- => &ndash;`, `\t => &nbsp;&nbsp;` etc. These substitutions are only used after security checks, so you can use html in values.
 
-##Tag
+## Tag
 
 First of all, you need to define your tags. You can pick from 3 different types of tags:
 
-###Simple Tag
+### Simple Tag
 
 Two constructors available for this tag:
 
@@ -31,18 +31,18 @@ First one is for a normal tag with open-and-close-pattern. The second one is for
 
 By using the second constructor, you shall create a tag without closing pattern, like image or iframe.
 
-###Attributed tag
+### Attributed tag
 
 So far it is only allowed to have one attribute per tag. It is possible to create such attributed tag by passing `withAttribute: true` as an argument to constructor. Since that you can put in `openTag` or `closeTag` pattern substring `{value}` to render the attribute value from string such as `[tag="value"]`. You can also do some extra, which will be mentioned later.
 
-###`PreformattedTag` and `CodeTag`
+### `PreformattedTag` and `CodeTag`
 
 These are tags which allow you to escape some parser things. First one only escapes alias substitutions, second one also escapes all the bb-tags within. Same constructor for both:
 
     public PreformattedTag(string name, string openTag, string closeTag)
     public CodeTag(string name, string openTag, string closeTag)
 
-##Example
+## Example
 
     using BbCodeParser;
 
@@ -71,9 +71,9 @@ These are tags which allow you to escape some parser things. First one only esca
 
     }
 
-#What next?
+# What next?
 
-##`BbParser.Parse`
+## `BbParser.Parse`
 
 Now that you have the `BbParser` instance, you can parse something with it, by passing the string into `Parse` method.
 
@@ -85,21 +85,21 @@ This method will return the `NodeTree` instance. There are three methods allowed
  - `ToText()` -- this one will return the text string, without any bb-codes. It will still replace `aliasSubstitution` though.
  - `ToHtml` -- this one requires a deeper explanation.
 
- ##`NodeTree.ToHtml`
+ ## `NodeTree.ToHtml`
 
     public string ToHtml(Func<Node, bool> filter = null, Func<Node, string, string> filterAttributeValue = null)
 
 Although you may use it just like `ToBb`/`ToText`, sometimes you need to hide some information from some users. You know, those old forum policies that forbid guest user to see links or images that are embedded via bb. In my case I created special tag `[private="UserName1, UserName2"]` to send private messages right inside bb-code. It is very useful in forum-based RPGs.
 `Filter` is pretty simple thing, you get the `TagNode` as an input and you should return whether to render this `Node` or not.
 
-###`TagNode`
+### `TagNode`
 
 It consists of two fields: `Tag` (which is very same `Tag` that you use to define the parser) and `AttributeValue` for attributed tags. Both are readonly.
 
 Sometimes you also want to modify the attribute values for some reasons (maybe you want to wrap outer links with your special fishing-detecting-system or replace same-domain links with relative paths). That's what you need `filterAttributeValue` for. You take `TagNode` and the attribute value and return new attribute value, that will be rendered.
 
-##Example
-
+## Example
+```csharp
     using BbCodeParser;
 
     public static class HelloWorld
@@ -142,4 +142,4 @@ Sometimes you also want to modify the attribute values for some reasons (maybe y
 
       }
 
-    }
+    }```
