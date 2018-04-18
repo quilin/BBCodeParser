@@ -84,7 +84,9 @@ public static class HelloWorld
 
 Now that you have the `BbParser` instance, you can parse something with it, by passing the string into `Parse` method.
 
-    var nodeTree = bbParser.Parse("[b]Hello, world![/b]");
+```csharp
+var nodeTree = bbParser.Parse("[b]Hello, world![/b]");
+```
 
 This method will return the `NodeTree` instance. There are three methods allowed for `NodeTree`:
 
@@ -94,7 +96,9 @@ This method will return the `NodeTree` instance. There are three methods allowed
 
  ## `NodeTree.ToHtml`
 
-    public string ToHtml(Func<Node, bool> filter = null, Func<Node, string, string> filterAttributeValue = null)
+```csharp
+public string ToHtml(Func<Node, bool> filter = null, Func<Node, string, string> filterAttributeValue = null)
+```
 
 Although you may use it just like `ToBb`/`ToText`, sometimes you need to hide some information from some users. You know, those old forum policies that forbid guest user to see links or images that are embedded via bb. In my case I created special tag `[private="UserName1, UserName2"]` to send private messages right inside bb-code. It is very useful in forum-based RPGs.
 `Filter` is pretty simple thing, you get the `TagNode` as an input and you should return whether to render this `Node` or not.
