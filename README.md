@@ -7,8 +7,9 @@ Because of those changes I was able to come up with more features and securities
 # How to use it?
 
 ## BbParser
-
-    public BbParser(Tag[] tags, Dictionary<string, string> securitySubstitutions, Dictionary<string, string> aliasSubstitutions)
+```csharp
+public BbParser(Tag[] tags, Dictionary<string, string> securitySubstitutions, Dictionary<string, string> aliasSubstitutions)
+```
 
 The BbParser is an entry point for the library, and you should use the only constructor for it. It takes three arguments, as you can see.
 
@@ -24,8 +25,10 @@ First of all, you need to define your tags. You can pick from 3 different types 
 
 Two constructors available for this tag:
 
-    public Tag(string name, string openTag, string closeTag, bool withAttribute = false, bool secure = true)
-    public Tag(string name, string openTag, bool withAttribute = false, bool secure = true)
+```csharp
+public Tag(string name, string openTag, string closeTag, bool withAttribute = false, bool secure = true)
+public Tag(string name, string openTag, bool withAttribute = false, bool secure = true)
+```
 
 First one is for a normal tag with open-and-close-pattern. The second one is for single tags, like image. First parameter (`name`) is the name of tag, that will be used inside bb-code. `openTag` stands for html-pattern of opening bb-tag, `closeTag` - for closing tag. `withAttribute` is a flag which defines whether the attribute is allowed for this tag, and `secure` is a flag which turns on the xss-protection for those attributed tags.
 
@@ -39,37 +42,41 @@ So far it is only allowed to have one attribute per tag. It is possible to creat
 
 These are tags which allow you to escape some parser things. First one only escapes alias substitutions, second one also escapes all the bb-tags within. Same constructor for both:
 
-    public PreformattedTag(string name, string openTag, string closeTag)
-    public CodeTag(string name, string openTag, string closeTag)
+```csharp
+public PreformattedTag(string name, string openTag, string closeTag)
+public CodeTag(string name, string openTag, string closeTag)
+```
 
 ## Example
 
-    using BbCodeParser;
+```csharp
+using BbCodeParser;
 
-    public static class HelloWorld
-    {
+public static class HelloWorld
+{
 
-      public static void Main(params string[] args)
-      {
+  public static void Main(params string[] args)
+  {
 
-        var bbParser = new BbParser(new [] {
-          new Tag("b", "<strong>", "</strong>"),
-          new Tag("tab", "&nbsp;&nbsp;&nbsp;"),
-          new Tag("link", "<a href=\"{value}\">", "</a>", withAttribute: true, secure: true),
-          new Tag("quote", "<div class=\"quote\">{value}:", "</div>", withAttribute: true, secure: false),
-          new Tag("img", "<img src=\"{value}\" />", withAttribute: true, secure: true),
-          new CodeTag("code", "<pre class=\"code\">", "</pre>"),
-          new PreformattedTag("pre", "<pre class=\"code\">", "</pre>")
-        }, BbParser.SecuritySubstitutions, new Dictionary<string, string> {
-          {"--", "&ndash;"},
-          {"---", "&mdash;"},
-          {"\r\n___\r\n", "<hr />"},
-          {"\r\n", "<br />"}
-        });
+    var bbParser = new BbParser(new [] {
+      new Tag("b", "<strong>", "</strong>"),
+      new Tag("tab", "&nbsp;&nbsp;&nbsp;"),
+      new Tag("link", "<a href=\"{value}\">", "</a>", withAttribute: true, secure: true),
+      new Tag("quote", "<div class=\"quote\">{value}:", "</div>", withAttribute: true, secure: false),
+      new Tag("img", "<img src=\"{value}\" />", withAttribute: true, secure: true),
+      new CodeTag("code", "<pre class=\"code\">", "</pre>"),
+      new PreformattedTag("pre", "<pre class=\"code\">", "</pre>")
+    }, BbParser.SecuritySubstitutions, new Dictionary<string, string> {
+      {"--", "&ndash;"},
+      {"---", "&mdash;"},
+      {"\r\n___\r\n", "<hr />"},
+      {"\r\n", "<br />"}
+    });
 
-      }
+  }
 
-    }
+}
+```
 
 # What next?
 
@@ -100,46 +107,47 @@ Sometimes you also want to modify the attribute values for some reasons (maybe y
 
 ## Example
 ```csharp
-    using BbCodeParser;
+using BbCodeParser;
 
-    public static class HelloWorld
-    {
+public static class HelloWorld
+{
 
-      public static void Main(params string[] args)
-      {
+  public static void Main(params string[] args)
+  {
 
-        var bbParser = new BbParser(new [] {
-          new Tag("b", "<strong>", "</strong>"),
-          new Tag("tab", "&nbsp;&nbsp;&nbsp;"),
-          new Tag("link", "<a href=\"{value}\">", "</a>", withAttribute: true, secure: true),
-          new Tag("quote", "<div class=\"quote\">{value}:", "</div>", withAttribute: true, secure: false),
-          new Tag("img", "<img src=\"{value}\" />", withAttribute: true, secure: true),
-          new CodeTag("code", "<pre class=\"code\">", "</pre>"),
-          new PreformattedTag("pre", "<pre class=\"code\">", "</pre>")
-        }, BbParser.SecuritySubstitutions, new Dictionary<string, string> {
-          {"--", "&ndash;"},
-          {"---", "&mdash;"},
-          {"\r\n___\r\n", "<hr />"},
-          {"\r\n", "<br />"}
-        });
+    var bbParser = new BbParser(new [] {
+      new Tag("b", "<strong>", "</strong>"),
+      new Tag("tab", "&nbsp;&nbsp;&nbsp;"),
+      new Tag("link", "<a href=\"{value}\">", "</a>", withAttribute: true, secure: true),
+      new Tag("quote", "<div class=\"quote\">{value}:", "</div>", withAttribute: true, secure: false),
+      new Tag("img", "<img src=\"{value}\" />", withAttribute: true, secure: true),
+      new CodeTag("code", "<pre class=\"code\">", "</pre>"),
+      new PreformattedTag("pre", "<pre class=\"code\">", "</pre>")
+    }, BbParser.SecuritySubstitutions, new Dictionary<string, string> {
+      {"--", "&ndash;"},
+      {"---", "&mdash;"},
+      {"\r\n___\r\n", "<hr />"},
+      {"\r\n", "<br />"}
+    });
 
-        var nodeTree = bbParser.Parse("[b]Hello, world![/b]");
-        nodeTree.ToHtml(); // <strong>Hello, world!</strong>
+    var nodeTree = bbParser.Parse("[b]Hello, world![/b]");
+    nodeTree.ToHtml(); // <strong>Hello, world!</strong>
 
-        var linkNodeTree = bbParser.Parse("[link=\"Hi\"]Link[/link]")
-        linkNodeTree.ToHtml(); // <a href="Hi">Link</a>
-        linkNodeTree.ToText(); // Link
+    var linkNodeTree = bbParser.Parse("[link=\"Hi\"]Link[/link]")
+    linkNodeTree.ToHtml(); // <a href="Hi">Link</a>
+    linkNodeTree.ToText(); // Link
 
-        var nodeTreeFromInvalidString = bbParser.Parse("[b][quote]Parser[/b]Can fix[/b]Things");
-        nodeTreeFromInvalidString.ToBb(); // [b][quote]Parser[/quote][/b]Can fixThings
-        nodeTreeFromInvalidString.ToHtml(); // <strong><div class="quote">Parser</div></strong>Can fixThings
+    var nodeTreeFromInvalidString = bbParser.Parse("[b][quote]Parser[/b]Can fix[/b]Things");
+    nodeTreeFromInvalidString.ToBb(); // [b][quote]Parser[/quote][/b]Can fixThings
+    nodeTreeFromInvalidString.ToHtml(); // <strong><div class="quote">Parser</div></strong>Can fixThings
 
-        var codeTree = bbParser.Parse("[code][b]Hello --[/b][/code]");
-        codeTree.ToHtml(); // <pre class="code">[b]Hello --[/b]</pre>
+    var codeTree = bbParser.Parse("[code][b]Hello --[/b][/code]");
+    codeTree.ToHtml(); // <pre class="code">[b]Hello --[/b]</pre>
 
-        var preTree = bbParser.Parse("[pre][b]Hello --[/b][/code]");
-        preTree.ToHtml(); // <pre class="code"><strong>Hello --</strong></pre>
+    var preTree = bbParser.Parse("[pre][b]Hello --[/b][/code]");
+    preTree.ToHtml(); // <pre class="code"><strong>Hello --</strong></pre>
 
-      }
+  }
 
-    }```
+}
+```
