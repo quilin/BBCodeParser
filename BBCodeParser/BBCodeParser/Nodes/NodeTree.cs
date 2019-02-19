@@ -82,5 +82,9 @@ namespace BBCodeParser.Nodes
 
             return result.ToString();
         }
+        
+        public List<Node> GetChildNodes() {
+            return ChildNodes;
+        }
     }
 }
